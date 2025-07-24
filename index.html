@@ -1,64 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boostcwex — OSINT-сервис</title>
+  <title>Boostcwex — Поиск информации</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0c0c0c;
-      color: #f0f0f0;
+      background-color: #0e0e0e;
+      color: #f5f5f5;
+      animation: fadeInBody 1s ease-in;
     }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
     header {
-      background-color: #141414;
+      background-color: #1a1a1a;
       padding: 20px;
       text-align: center;
-      border-bottom: 2px solid #cc0000;
+      border-bottom: 2px solid red;
+      animation: fadeInTop 1s ease-in;
     }
+
     header h1 {
-      color: #cc0000;
+      color: red;
       margin: 0;
     }
-    header p {
-      color: #ccc;
-      margin-top: 5px;
-    }
+
     .container {
       padding: 40px 20px;
       max-width: 800px;
       margin: auto;
     }
+
     .service {
-      border: 1px solid #cc0000;
+      border: 1px solid red;
       border-radius: 10px;
       padding: 20px;
       margin-bottom: 20px;
       background-color: #1a1a1a;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
     }
+
+    .service:nth-child(1) { animation-delay: 0.3s; }
+    .service:nth-child(2) { animation-delay: 0.6s; }
+    .service:nth-child(3) { animation-delay: 0.9s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .service h2 {
-      color: #cc0000;
+      color: red;
       margin-top: 0;
     }
+
     .btn {
       display: inline-block;
       margin-top: 10px;
       padding: 10px 20px;
-      background-color: #cc0000;
-      color: #fff;
+      background-color: red;
+      color: white;
       text-decoration: none;
       border-radius: 5px;
       transition: background 0.3s ease;
     }
+
     .btn:hover {
-      background-color: #990000;
+      background-color: darkred;
     }
+
     footer {
       text-align: center;
       padding: 20px;
       background-color: #111;
-      color: #777;
+      color: #888;
       font-size: 14px;
     }
   </style>
@@ -66,31 +92,31 @@
 <body>
   <header>
     <h1>Boostcwex</h1>
-    <p>OSINT-сервис: поиск информации из открытых источников</p>
+    <p>Сервис поиска информации из открытых источников (OSINT)</p>
   </header>
 
   <div class="container">
     <div class="service">
       <h2>Поиск по номеру телефона — 1$</h2>
-      <p>Информация из открытых источников: социальные сети, мессенджеры, предполагаемое имя владельца.</p>
+      <p>Информация из открытых источников: соцсети, мессенджеры, возможное имя.</p>
       <a href="https://t.me/vieroyf" class="btn">Заказать в Telegram</a>
     </div>
 
     <div class="service">
       <h2>VIP-отчёт — 5$</h2>
-      <p>Расширенный анализ из открытых источников: утечки баз данных, регионы активности, профили в сервисах.</p>
+      <p>Расширенный анализ: утечки данных, история активности, регионы, привязки к аккаунтам.</p>
       <a href="https://t.me/vieroyf" class="btn">Заказать в Telegram</a>
     </div>
 
     <div class="service">
       <h2>Анализ Telegram-аккаунта — 5$</h2>
-      <p>Анализ публичной информации Telegram-профиля, активности и привязок.</p>
+      <p>Проверка активности, публичной информации, анализа возможных уязвимостей.</p>
       <a href="https://t.me/vieroyf" class="btn">Связаться</a>
     </div>
   </div>
 
   <footer>
-    <p>Boostcwex © 2025 | Все данные предоставляются исключительно из открытых источников (OSINT).</p>
+    <p>Boostcwex © 2025 | Все данные собираются только из открытых источников (OSINT)</p>
   </footer>
 </body>
 </html>
