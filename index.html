@@ -1,55 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Boostcwex — Поиск информации</title>
+  <title>Boostcwex — OSINT-сервис</title>
   <style>
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 30% 30%, rgba(255,0,0,0.05), transparent 70%),
-                  radial-gradient(circle at 70% 70%, rgba(255,0,0,0.05), transparent 70%);
-      background-repeat: no-repeat;
-      animation: smokeMove 20s linear infinite;
-      z-index: 0;
-    }
-
-    @keyframes smokeMove {
-      0% {
-        background-position: 30% 30%, 70% 70%;
-      }
-      50% {
-        background-position: 35% 25%, 65% 75%;
-      }
-      100% {
-        background-position: 30% 30%, 70% 70%;
-      }
-    }
-
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #0e0e0e;
-      color: #f5f5f5;
-      position: relative;
-      z-index: 1;
+      background-color: #0c0c0c;
+      color: #f0f0f0;
     }
-
     header {
-      background-color: #1a1a1a;
+      background-color: #141414;
       padding: 20px;
       text-align: center;
-      border-bottom: 2px solid red;
+      border-bottom: 2px solid #cc0000;
     }
     header h1 {
-      color: red;
+      color: #cc0000;
       margin: 0;
+    }
+    header p {
+      color: #ccc;
+      margin-top: 5px;
     }
     .container {
       padding: 40px 20px;
@@ -57,34 +31,34 @@
       margin: auto;
     }
     .service {
-      border: 1px solid red;
+      border: 1px solid #cc0000;
       border-radius: 10px;
       padding: 20px;
       margin-bottom: 20px;
       background-color: #1a1a1a;
     }
     .service h2 {
-      color: red;
+      color: #cc0000;
       margin-top: 0;
     }
     .btn {
       display: inline-block;
       margin-top: 10px;
       padding: 10px 20px;
-      background-color: red;
-      color: white;
+      background-color: #cc0000;
+      color: #fff;
       text-decoration: none;
       border-radius: 5px;
       transition: background 0.3s ease;
     }
     .btn:hover {
-      background-color: darkred;
+      background-color: #990000;
     }
     footer {
       text-align: center;
       padding: 20px;
       background-color: #111;
-      color: #888;
+      color: #777;
       font-size: 14px;
     }
   </style>
@@ -92,31 +66,31 @@
 <body>
   <header>
     <h1>Boostcwex</h1>
-    <p>Сервис поиска информации из открытых источников (OSINT)</p>
+    <p>OSINT-сервис: поиск информации из открытых источников</p>
   </header>
 
   <div class="container">
     <div class="service">
       <h2>Поиск по номеру телефона — 1$</h2>
-      <p>Информация из открытых источников: соцсети, мессенджеры, возможное имя.</p>
+      <p>Информация из открытых источников: социальные сети, мессенджеры, предполагаемое имя владельца.</p>
       <a href="https://t.me/vieroyf" class="btn">Заказать в Telegram</a>
     </div>
 
     <div class="service">
       <h2>VIP-отчёт — 5$</h2>
-      <p>Расширенный анализ: утечки данных, история активности, регионы, привязки к аккаунтам.</p>
+      <p>Расширенный анализ из открытых источников: утечки баз данных, регионы активности, профили в сервисах.</p>
       <a href="https://t.me/vieroyf" class="btn">Заказать в Telegram</a>
     </div>
 
     <div class="service">
       <h2>Анализ Telegram-аккаунта — 5$</h2>
-      <p>Проверка активности, публичной информации, анализа возможных уязвимостей.</p>
+      <p>Анализ публичной информации Telegram-профиля, активности и привязок.</p>
       <a href="https://t.me/vieroyf" class="btn">Связаться</a>
     </div>
   </div>
 
   <footer>
-    <p>Boostcwex © 2025 | Все данные собираются только из открытых источников (OSINT)</p>
+    <p>Boostcwex © 2025 | Все данные предоставляются исключительно из открытых источников (OSINT).</p>
   </footer>
 </body>
 </html>
